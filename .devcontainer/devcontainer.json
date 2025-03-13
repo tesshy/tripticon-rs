@@ -1,0 +1,17 @@
+{
+  "name": "ESP32 MAC Logger",
+  "image": "espressif/idf-rust:all_latest",
+  "extensions": [
+    "rust-lang.rust",
+    "ms-vscode.cpptools"
+  ],
+  "settings": {
+    "rust-analyzer.cargo.loadOutDirsFromCheck": true,
+    "editor.formatOnSave": true
+  },
+  "postCreateCommand": "cargo build",
+  "remoteUser": "root",
+  "runArgs": [
+    "--device=/dev/tty.usbmodem101:/dev/tty.usbmodem101"
+  ],
+}
