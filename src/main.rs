@@ -12,9 +12,10 @@ use aws_sdk_s3::Client;
 use aws_sdk_s3::types::ByteStream;
 use tokio_util::codec::{BytesCodec, FramedRead};
 use std::sync::Arc;
-use std::fs::File;
+use tokio::fs::File;
 use std::io::Write;
 use std::time::Instant;
+use aws_config;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {

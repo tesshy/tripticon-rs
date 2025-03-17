@@ -5,10 +5,11 @@ edition = "2021"
 
 [dependencies]
 btleplug = "0.11"
-tokio = { version = "1.28", features = ["full"] }
+tokio = { version = "1.42", features = ["full"] }
 chrono = "0.4"
 log = "0.4"
 env_logger = "0.10"
 arrow = "6.4.0"
 aws-sdk-s3 = "0.0.26-alpha"
 tokio-util = "0.7.1"
+aws-config = "0.0.26-alpha"
